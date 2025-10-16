@@ -16,10 +16,10 @@ screenGui.Name = "CustomUI"
 screenGui.ResetOnSpawn = false
 screenGui.Parent = game:GetService("CoreGui")
 
--- Botão principal (MENOR) - POSIÇÃO ABAIXO DA OUTRA UI
+-- Botão principal (MENOR)
 local desyncButton = Instance.new("TextButton")
 desyncButton.Size = UDim2.new(0, 100, 0, 40)  -- Tamanho menor
-desyncButton.Position = UDim2.new(0, 20, 0, 140)  -- 20px da esquerda, 140px do topo (abaixo da outra)
+desyncButton.Position = UDim2.new(0, 10, 0, 10)
 desyncButton.Text = "Desync"  -- Nome alterado
 desyncButton.Font = Enum.Font.Arcade
 desyncButton.TextSize = 14    -- Texto menor
@@ -439,4 +439,4 @@ player.CharacterAdded:Connect(function(character)
 end)
 
 -- Iniciar
-showNotification("🎯 DESYNC LOADED\nPress [Y] to activate DESYNC\nQuantum Cloner - 1.5s speed")
+showNotification("🎯 DESYNC SYSTEM LOADED\nPress [Y] to activate DESYNC\nQuantum Cloner - 1.5s speed")
